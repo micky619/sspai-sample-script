@@ -1,1 +1,1 @@
-# sspai-sample-script
+取之有道
