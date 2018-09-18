@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>Text Soap</string>
+		<key>notes</key>
+		<string></string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>addsp</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2018-03-10T03:25:30Z</date>
+			<key>label</key>
+			<string>添加 中英空格</string>
+			<key>modificationDate</key>
+			<date>2018-09-18T11:07:38Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var p1=/([A-Za-z_])([\u4e00-\u9fa5]+)/gi;
+var p2=/([\u4e00-\u9fa5]+)([A-Za-z_])/gi;
+var p3=/([\u4e00-\u9fa5]+)([0-9]+)/gi;
+var p4=/([0-9]+)([\u4e00-\u9fa5]+)/gi;
+var p5=/([A-Za-z_])([0-9]+)/gi;
+var p6=/([0-9]+)([A-Za-z_])/gi;
+result = result.replace(p1, "$1 $2").replace(p2, "$1 $2").replace(p3, "$1 $2").replace(p4, "$1 $2").replace(p5, "$1 $2").replace(p6, "$1 $2")
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>8746FDF3-5932-47F7-905A-7EB88DFA7005</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rmbr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2018-02-19T02:04:06Z</date>
+			<key>label</key>
+			<string>去除 &lt;br&gt;</string>
+			<key>modificationDate</key>
+			<date>2018-08-04T12:26:24Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var re1 = /&lt;br&gt;/g;
+var re2 = /&lt;br\s\/&gt;/g;
+result = result.replace(re1,"")
+result = result.replace(re2,"\n")
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>6047D752-D020-445C-8D67-F1B86B267C74</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rmnn</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2018-02-19T02:04:06Z</date>
+			<key>label</key>
+			<string>去除 多余空行</string>
+			<key>modificationDate</key>
+			<date>2018-09-18T11:04:57Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var reg = /\n(\n)*( )*(\n)*\n/g;
+var result = result.replace(reg,"\n\n");
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>AFB52B72-8024-4FD5-A45D-D4754145C8B6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rmssp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2018-02-19T02:04:06Z</date>
+			<key>label</key>
+			<string>去除少数派</string>
+			<key>modificationDate</key>
+			<date>2018-08-19T03:40:11Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var re = /\s-\s少数派/g;
+result = result.replace(re,"")
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>0C77B73E-2643-4328-B02A-5FEC5583BDAB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rpqt</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2018-03-10T03:29:08Z</date>
+			<key>label</key>
+			<string>替换 弯角引号</string>
+			<key>modificationDate</key>
+			<date>2018-09-18T11:07:46Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var re1 = /“/g;
+var re2 = /”/g;
+result = result.replace(re1,"「");
+result = result.replace(re2,"」");
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>4404E951-E922-409B-A42F-A45B6D8D4BB1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>addnn</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2018-07-21T17:18:49Z</date>
+			<key>label</key>
+			<string>添加 空行</string>
+			<key>modificationDate</key>
+			<date>2018-09-18T11:57:35Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var re = /\n/g;
+result = result.replace(re,"\n\n");
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>210FF823-9735-4008-8B97-1F743CD5437F</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>qqqt</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2018-02-19T02:17:18Z</date>
+			<key>label</key>
+			<string>Markdown 引用</string>
+			<key>modificationDate</key>
+			<date>2018-09-18T11:06:33Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var re = /\n/g;
+result = result.replace(re,"\n&gt;");
+result = "&gt; " + result
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>7758E0B4-A0AE-490B-8EFF-9AE5A6B71C13</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>llow</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2018-02-19T01:35:43Z</date>
+			<key>label</key>
+			<string>LowerCase</string>
+			<key>modificationDate</key>
+			<date>2018-03-10T03:28:50Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.toLowerCase( );</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>71445D60-BF72-4550-A31E-92954385C21C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>uup</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2018-02-20T10:33:12Z</date>
+			<key>label</key>
+			<string>UpperCase</string>
+			<key>modificationDate</key>
+			<date>2018-03-10T03:28:47Z</date>
+			<key>plainText</key>
+			<string>TextExpander.pasteboardText.toUpperCase( );</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>C570EE92-9368-47F7-9777-4849B71DEDD3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rmsss</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2018-02-19T02:04:06Z</date>
+			<key>label</key>
+			<string>去除 多余空格</string>
+			<key>modificationDate</key>
+			<date>2018-09-18T12:03:38Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var reg = /\s(\s)*( )*(\s)*\s/g;
+var result = result.replace(reg,"");
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>8480DCBE-CF3F-4C21-8FC7-9CAB7F408AD0</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>llist</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2018-02-19T02:17:18Z</date>
+			<key>label</key>
+			<string>Markdown 列表</string>
+			<key>modificationDate</key>
+			<date>2018-09-18T11:05:53Z</date>
+			<key>plainText</key>
+			<string>var result = TextExpander.pasteboardText;
+
+var re = /\n/g;
+result = result.replace(re,"\n- ");
+result = "- " + result
+
+TextExpander.appendOutput(result);</string>
+			<key>snippetType</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>014C2F72-3BA7-4D5F-BF77-D27B6F4FB73A</string>
+		</dict>
+	</array>
+</dict>
+</plist>
