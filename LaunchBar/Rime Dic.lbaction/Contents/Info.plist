@@ -11,13 +11,13 @@
 	<key>LBDescription</key>
 	<dict>
 		<key>LBAuthor</key>
-		<string></string>
+		<string>Minja</string>
 		<key>LBEmail</key>
 		<string></string>
 		<key>LBTwitter</key>
 		<string></string>
 		<key>LBWebsiteURL</key>
-		<string></string>
+		<string>minja.bitcron.com</string>
 	</dict>
 	<key>LBScripts</key>
 	<dict>
